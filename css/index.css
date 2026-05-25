@@ -1,4 +1,4 @@
-/* ── Layout ── */
+/* ── Reset ── */
 * {
   margin: 0;
   padding: 0;
@@ -12,16 +12,18 @@ body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* ── Top Bar ── */
 top-bar {
   display: block;
   width: 100%;
   z-index: 1000;
 }
 
-a {
-  text-decoration: none;
-}
-
+/* ── Layout ── */
 .layout {
   display: flex;
   flex: 1;
@@ -33,21 +35,38 @@ side-bar {
   overflow-y: auto;
 }
 
+/* ── Main Content ── */
 .main-content {
   flex: 1;
-  padding: 24px;
+  padding: 32px 40px;
   overflow-y: auto;
   background-color: #f8f9fa;
-  max-width: 100%;
+}
+
+.main-content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  word-break: break-word;
 }
 
 .main-content p {
-  line-height: 1.8;
+  line-height: 1.9;
   text-align: justify;
   word-break: break-word;
-  max-width: 800px;
+  max-width: 720px;
+  color: #333;
 }
 
+/* ── Image ── */
+.img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 24px 0;
+}
+
+/* ── Sidebar ── */
 .sidebar {
   width: 70px;
   min-width: 70px;
@@ -110,24 +129,15 @@ side-bar {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* ── Image ── */
-.img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-}
-
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .sidebar {
-    width: 60px;
-    min-width: 60px;
+    width: 50px;
+    min-width: 50px;
   }
 
   .sidebar.expanded {
-    width: 180px;
+    width: 160px;
   }
 
   .sidebar-link i {
@@ -136,16 +146,21 @@ side-bar {
   }
 
   .main-content {
-    padding: 16px 12px;
+    padding: 16px;
+  }
+
+  .main-content h1 {
+    font-size: 1.4rem;
   }
 
   .main-content p {
-    font-size: 15px;
-    line-height: 1.7;
+    font-size: 14px;
+    line-height: 1.75;
+    max-width: 100%;
   }
 
   .img {
     max-width: 100%;
-    margin: 12px auto;
+    margin: 16px 0;
   }
 }
