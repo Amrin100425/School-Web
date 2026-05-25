@@ -12,35 +12,42 @@ body {
   overflow: hidden;
 }
 
-/* topbar full width at top */
 top-bar {
   display: block;
   width: 100%;
   z-index: 1000;
 }
-a{
+
+a {
   text-decoration: none;
 }
-/* sidebar and content side by side */
+
 .layout {
   display: flex;
   flex: 1;
   overflow: hidden;
 }
 
-/* sidebar */
 side-bar {
   display: block;
   overflow-y: auto;
 }
 
-/* main content fills remaining space */
 .main-content {
   flex: 1;
   padding: 24px;
   overflow-y: auto;
   background-color: #f8f9fa;
+  max-width: 100%;
 }
+
+.main-content p {
+  line-height: 1.8;
+  text-align: justify;
+  word-break: break-word;
+  max-width: 800px;
+}
+
 .sidebar {
   width: 70px;
   min-width: 70px;
@@ -68,7 +75,7 @@ side-bar {
 }
 
 .sidebar-link:hover {
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   color: white;
 }
 
@@ -100,13 +107,19 @@ side-bar {
 }
 
 .toggle-btn:hover {
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
-.img{
-  width: 500px;
-  height: 350px;
-  margin-left: 600px;
+
+/* ── Image ── */
+.img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }
+
+/* ── Responsive ── */
 @media (max-width: 768px) {
   .sidebar {
     width: 60px;
@@ -123,13 +136,16 @@ side-bar {
   }
 
   .main-content {
-    padding: 16px;
+    padding: 16px 12px;
+  }
+
+  .main-content p {
+    font-size: 15px;
+    line-height: 1.7;
   }
 
   .img {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-    display: block;
+    max-width: 100%;
+    margin: 12px auto;
   }
 }
