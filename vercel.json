@@ -25,11 +25,11 @@
         },
         {
             "src": "/aboutus",
-            "dest": "/aboutus.html"
+            "dest": "/pages/aboutus.html"
         },
         {
             "src": "/(.*)",
-            "dest": "/$1"
+            "dest": "/$1.html"
         }
     ]
 }
