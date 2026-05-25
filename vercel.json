@@ -24,10 +24,6 @@
             "dest": "/index.html"
         },
         {
-            "src": "/aboutus",
-            "dest": "/pages/aboutus.html"
-        },
-        {
             "src": "/(.*)",
             "dest": "/$1.html"
         }
