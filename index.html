@@ -1,31 +1,52 @@
 <html lang="en">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="css/index.css">
-  <script src="components/SideBar.js" defer></script>
-  <script src="components/TopBar.js" defer></script>
-  <script src="components/Body.js" defer></script>
-  <title>Home</title>
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="components/SideBar.js" defer></script>
+    <script src="components/TopBar.js" defer></script>
+    <script src="components/Body.js" defer></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <top-bar></top-bar>
 
-  <top-bar></top-bar>
+    <div class="layout">
+      <side-bar></side-bar>
 
-  <div class="layout">
-    <side-bar></side-bar>
+      <main class="main-content">
+        <h1 class="fs-1" style="text-decoration: underline">
+          សាលាបឋមសិក្សា ធ្លកអណ្តូង
+        </h1>
+        <br />
+        <br />
+        <p>
+          សាលាបឋមសិក្សា ធ្លកអណ្តូង សហការជាមួយសហគមន៍ អាជ្ញាធរ សប្បុរសជនជាតិ
+          និងអន្តរជាតិ ដើម្បីអភិវឌ្ឍសាលារៀនឱ្យក្លាយជាសាលាស្តង់ដាគំរូ។
+          ដឹកនាំអភិវឌ្ឍ សមត្ថភាពគ្រូបង្រៀន និងសិស្សានុសិស្សឲ្យការបង្រៀន និងរៀន
+          ប្រកបដោយប្រសិទ្ធិភាព និងគុណភាព ដើម្បីបម្រើអត្ថប្រយោជន៍មូលដ្ឋាន
+          ក្នុងសហគមន៍ និងសង្គមជាតិ។
+          ហើយប្តេជ្ញាអភិវឌ្ឍសាលារៀនឲ្យក្លាយជាមជ្ឈមណ្ឌលផ្តល់ចំណេះដឹងពេញលេញសម្រាប់សិស្សានុសិស្សក្នុងការកសាងធនធានមនុស្សឲ្យឆ្លើយតបទៅនិងគោលនយោបាយអប់រំ
+          និងគោលដៅអភិវឌ្ឍប្រកបដោយចីរភាព(SDG4)ស្របតាមយុគសម័យបច្ចេកវិទ្យាឌីជីថល។
+        </p>
+        <img class="img" src="/images/frontschool.jpg" alt="School Image" />
+        <br />
+        <button class="btn btn-warning">
+          <a href="/pages/aboutus.html"
+            ><i class="fa-solid fa-info-circle"></i> អំពីយើង</a
+          >
+        </button>
+      </main>
+    </div>
 
-    <main class="main-content">
-      <h1 class="fs-1">Welcome to Thloak Andoung Primary School</h1>
-      <p>This is the main content of the home page.</p>
-      <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button class="btn btn-primary">Learn More</button>
-    </main>
-
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

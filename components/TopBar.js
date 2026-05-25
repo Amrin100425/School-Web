@@ -3,7 +3,7 @@ class TopBar extends HTMLElement {
     this.innerHTML = `
       <nav class="navbar navbar-expand-lg navbar-light bg-success">
         <div class="container-fluid px-4">
-          <span class="navbar-brand fw-bold"><img src="/components/school.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></span><span class="navbar-brand fw-bold">សាលាបឋមសិក្សាធ្លកអណ្ដូង</span>
+          <span class="navbar-brand fw-bold"><a href="/"><img src="/components/school.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></a></span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
           </button>
