@@ -16,12 +16,20 @@
         {
             "src": "images/**",
             "use": "@vercel/static"
+        },
+        {
+            "src": "pages/**",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
         {
             "src": "/",
             "dest": "/index.html"
+        },
+        {
+            "src": "/aboutus",
+            "dest": "/pages/aboutus.html"
         },
         {
             "src": "/(.*)",
