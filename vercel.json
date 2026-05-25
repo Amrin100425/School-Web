@@ -6,15 +6,15 @@
             "use": "@vercel/static"
         },
         {
-            "src": "index.html",
-            "use": "@vercel/static"
-        },
-        {
             "src": "components/**",
             "use": "@vercel/static"
         },
         {
             "src": "css/**",
+            "use": "@vercel/static"
+        },
+        {
+            "src": "images/**",
             "use": "@vercel/static"
         }
     ],
@@ -26,6 +26,10 @@
         {
             "src": "/(.*)",
             "dest": "/$1"
+        },
+        {
+            "src": "/aboutus",
+            "dest": "/aboutus.html"
         }
     ]
 }
