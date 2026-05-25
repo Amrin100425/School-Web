@@ -1,3 +1,44 @@
+/* ── Layout ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* topbar full width at top */
+top-bar {
+  display: block;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* sidebar and content side by side */
+.layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* sidebar */
+side-bar {
+  display: block;
+  overflow-y: auto;
+}
+
+/* main content fills remaining space */
+.main-content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+}
 .sidebar {
   width: 70px;
   min-width: 70px;
