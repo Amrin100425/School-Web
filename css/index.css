@@ -125,9 +125,11 @@ side-bar {
   .main-content {
     padding: 16px;
   }
-  .img{
-    width: 300px;
-    height: 200px;
-    margin-left: 300px;
+
+  .img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    display: block;
   }
 }
