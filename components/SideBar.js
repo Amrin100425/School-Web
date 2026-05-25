@@ -5,27 +5,27 @@ class SideBar extends HTMLElement {
         
         <a href="/index.html" class="sidebar-link" title="Home">
           <i class="fa-solid fa-home"></i>
-          <span class="link-text">Home</span>
+          <span class="link-text">ទំព័រដើម</span>
         </a>
         <a href="/pages/about.html" class="sidebar-link" title="About">
           <i class="fa-solid fa-info-circle"></i>
-          <span class="link-text">About</span>
+          <span class="link-text">អំពីយើង</span>
         </a>
         <a href="/pages/contact.html" class="sidebar-link" title="Contact">
           <i class="fa-solid fa-envelope"></i>
-          <span class="link-text">Contact</span>
+          <span class="link-text">ទំនាក់ទំនង</span>
         </a>
         <a href="/pages/students.html" class="sidebar-link" title="Students">
           <i class="fa-solid fa-users"></i>
-          <span class="link-text">Students</span>
+          <span class="link-text">សិស្ស</span>
         </a>
         <a href="/pages/report.html" class="sidebar-link" title="Reports">
           <i class="fa-solid fa-chart-bar"></i>
-          <span class="link-text">Reports</span>
+          <span class="link-text">របាយការណ៍</span>
         </a>
         <a href="/pages/ranking.html" class="sidebar-link" title="Ranking">
           <i class="fa-solid fa-star"></i>
-          <span class="link-text">Ranking</span>
+          <span class="link-text">ចំណាត់ថ្នាក់</span>
         </a>
 
         <button class="toggle-btn" id="sidebarToggle" title="Toggle">
