@@ -2,7 +2,7 @@
 const API =
   window.location.hostname === "localhost"
     ? "http://localhost:3000"
-    : "https://school-api.vercel.app";
+    : "https://school-web-jet.vercel.app";
 
 fetch(`${API}/api/students/total`)
   .then((r) => r.json())
