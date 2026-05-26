@@ -31,7 +31,7 @@
 }
 
 .stat-card1 {
-  background: #084d08;
+  background: linear-gradient(rgb(36, 15, 15), rgb(38, 25, 88), rgb(54, 54, 71));
   border: 0.5px solid #1e3a5f;
   border-radius: 14px;
   padding: 18px 20px;
@@ -41,8 +41,8 @@
   position: relative;
   overflow: hidden;
 }
-.stat-card2{
-    background: #1e5049;
+.stat-card2 {
+  background: linear-gradient(rgb(15, 36, 30), rgb(30, 88, 25), rgb(71, 54, 66));
   border: 0.5px solid #1e3a5f;
   border-radius: 14px;
   padding: 18px 20px;
@@ -50,10 +50,10 @@
   flex-direction: column;
   gap: 8px;
   position: relative;
-  overflow: hidden;  
+  overflow: hidden;
 }
 .stat-card3{
-    background: #501e48;
+   background: linear-gradient(rgb(36, 15, 18), rgb(48, 10, 28), rgb(71, 54, 66));
   border: 0.5px solid #1e3a5f;
   border-radius: 14px;
   padding: 18px 20px;
@@ -64,7 +64,40 @@
   overflow: hidden;  
 }
 .stat-card4{
-    background: #496123;
+  background: linear-gradient(rgb(36, 26, 15), rgb(88, 50, 25), rgb(71, 54, 66));
+  border: 0.5px solid #1e3a5f;
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;  
+}
+.stat-card5{
+  background: linear-gradient(rgb(36, 26, 15), rgb(25, 88, 72), rgb(54, 61, 71));
+  border: 0.5px solid #1e3a5f;
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;  
+}
+.stat-card6{
+  background: linear-gradient(rgb(30, 15, 36), rgb(88, 25, 72), rgb(65, 54, 71));
+  border: 0.5px solid #1e3a5f;
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;  
+}
+.stat-card7{
+  background: linear-gradient(rgb(60, 95, 78), rgb(33, 53, 46), rgb(26, 34, 30));
   border: 0.5px solid #1e3a5f;
   border-radius: 14px;
   padding: 18px 20px;

@@ -1,7 +1,7 @@
 class SideBar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <div class="sidebar d-flex flex-column flex-shrink-0 p-2" id="sidebar">
+      <div class="sidebar d-flex flex-column flex-shrink-0 p-2" style="background: linear-gradient(135deg, #1a3b0a, #254d12, #448b21 );" id="sidebar">
         
         <a href="/index.html" class="sidebar-link" title="Home">
           <i class="fa-solid fa-home"></i>
