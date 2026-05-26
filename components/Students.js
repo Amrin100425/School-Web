@@ -1,3 +1,4 @@
+// const API = "https://school-web-jet.vercel.app/";
 const API = "http://localhost:3000";
 
 fetch(`${API}/api/students/total`)
@@ -13,11 +14,23 @@ fetch(`${API}/api/students/gender`)
 fetch(`${API}/api/students/grade`)
   .then((r) => r.json())
   .then((d) => (document.getElementById("grade1").textContent = d.totalG1));
+
 fetch(`${API}/api/students/grade1girl`)
   .then((r) => r.json())
   .then(
     (d) => (document.getElementById("grade1girl").textContent = d.totalGG1),
   );
+
+fetch(`${API}/api/students/grade2`)
+  .then((r) => r.json())
+  .then((d) => (document.getElementById("grade2").textContent = d.totalG2));
+
+fetch(`${API}/api/students/grade2girl`)
+  .then((r) => r.json())
+  .then(
+    (d) => (document.getElementById("grade2girl").textContent = d.totalGG2),
+  );
+
 fetch(`${API}/api/students/by-grade`)
   .then((r) => r.json())
   .then((data) => {

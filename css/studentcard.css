@@ -50,7 +50,7 @@
   overflow: hidden;  
 }
 .card-label {
-  font-size: 11px;
+  font-size: 15px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #ffffff;
@@ -65,15 +65,15 @@
 }
 
 .card-sub { font-size: 12px; font-weight: 500; }
-.sub-green { color: #00ff22; }
-.sub-blue  { color: #0073ff; }
-.sub-red   { color: #ff0000; }
-.sub-gray  { color: #eeff00; }
+.sub-green { color: #ffffff; }
+.sub-blue  { color: #ffffff; }
+.sub-red   { color: #ffffff; }
+.sub-gray  { color: #ffffff; }
 
 .card-icon {
   position: absolute;
   top: 16px;
   right: 16px;
-  font-size: 18px;
+  font-size: 20px;
   opacity: 1.0;
 }

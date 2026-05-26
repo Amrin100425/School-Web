@@ -42,4 +42,21 @@ app.get("/api/students/grade1girl", async (req, res) => {
 
   res.json({ totalGG1 });
 });
+
+app.get("/api/students/grade2", async (req, res) => {
+  const totalG2 = await Student.countDocuments({
+    grade: 2,
+  });
+  res.json({ totalG2 });
+});
+
+app.get("/api/students/grade2girl", async (req, res) => {
+  const totalGG2 = await Student.countDocuments({
+    grade: 2,
+    gender: "ស",
+  });
+
+  res.json({ totalGG2 });
+});
+
 app.listen(3000, () => console.log("Server running on port 3000"));
