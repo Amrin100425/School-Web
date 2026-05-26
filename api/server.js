@@ -59,4 +59,84 @@ app.get("/api/students/grade2girl", async (req, res) => {
   res.json({ totalGG2 });
 });
 
+app.get("/api/students/grade2", async (req, res) => {
+  const totalG2 = await Student.countDocuments({
+    grade: 2,
+  });
+  res.json({ totalG2 });
+});
+
+app.get("/api/students/grade2girl", async (req, res) => {
+  const totalGG2 = await Student.countDocuments({
+    grade: 2,
+    gender: "ស",
+  });
+
+  res.json({ totalGG2 });
+});
+
+app.get("/api/students/grade3", async (req, res) => {
+  const totalG3 = await Student.countDocuments({
+    grade: 3,
+  });
+  res.json({ totalG3 });
+});
+
+app.get("/api/students/grade3girl", async (req, res) => {
+  const totalGG3 = await Student.countDocuments({
+    grade: 3,
+    gender: "ស",
+  });
+
+  res.json({ totalGG3 });
+});
+
+app.get("/api/students/grade4", async (req, res) => {
+  const totalG4 = await Student.countDocuments({
+    grade: 4,
+  });
+  res.json({ totalG4 });
+});
+
+app.get("/api/students/grade4girl", async (req, res) => {
+  const totalGG4 = await Student.countDocuments({
+    grade: 4,
+    gender: "ស",
+  });
+
+  res.json({ totalGG4 });
+});
+
+app.get("/api/students/grade5", async (req, res) => {
+  const totalG5 = await Student.countDocuments({
+    grade: 5,
+  });
+  res.json({ totalG5 });
+});
+
+app.get("/api/students/grade5girl", async (req, res) => {
+  const totalGG5 = await Student.countDocuments({
+    grade: 5,
+    gender: "ស",
+  });
+
+  res.json({ totalGG5 });
+});
+
+app.get("/api/students/grade6", async (req, res) => {
+  const totalG6 = await Student.countDocuments({
+    grade: 6,
+  });
+  res.json({ totalG6 });
+});
+
+app.get("/api/students/grade6girl", async (req, res) => {
+  const totalGG6 = await Student.countDocuments({
+    grade: 6,
+    gender: "ស",
+  });
+
+  res.json({ totalGG6 });
+});
+
 app.listen(3000, () => console.log("Server running on port 3000"));

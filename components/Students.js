@@ -1,5 +1,8 @@
-// const API = "https://school-web-jet.vercel.app/";
-const API = "http://localhost:3000";
+// const API = "http://localhost:3000";
+const API =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000"
+    : "https://school-web-jet.vercel.app/";
 
 fetch(`${API}/api/students/total`)
   .then((r) => r.json())
@@ -29,6 +32,46 @@ fetch(`${API}/api/students/grade2girl`)
   .then((r) => r.json())
   .then(
     (d) => (document.getElementById("grade2girl").textContent = d.totalGG2),
+  );
+
+fetch(`${API}/api/students/grade3`)
+  .then((r) => r.json())
+  .then((d) => (document.getElementById("grade3").textContent = d.totalG3));
+
+fetch(`${API}/api/students/grade3girl`)
+  .then((r) => r.json())
+  .then(
+    (d) => (document.getElementById("grade3girl").textContent = d.totalGG3),
+  );
+
+fetch(`${API}/api/students/grade4`)
+  .then((r) => r.json())
+  .then((d) => (document.getElementById("grade4").textContent = d.totalG4));
+
+fetch(`${API}/api/students/grade4girl`)
+  .then((r) => r.json())
+  .then(
+    (d) => (document.getElementById("grade4girl").textContent = d.totalGG4),
+  );
+
+fetch(`${API}/api/students/grade5`)
+  .then((r) => r.json())
+  .then((d) => (document.getElementById("grade5").textContent = d.totalG5));
+
+fetch(`${API}/api/students/grade5girl`)
+  .then((r) => r.json())
+  .then(
+    (d) => (document.getElementById("grade5girl").textContent = d.totalGG5),
+  );
+
+fetch(`${API}/api/students/grade6`)
+  .then((r) => r.json())
+  .then((d) => (document.getElementById("grade6").textContent = d.totalG6));
+
+fetch(`${API}/api/students/grade6girl`)
+  .then((r) => r.json())
+  .then(
+    (d) => (document.getElementById("grade6girl").textContent = d.totalGG6),
   );
 
 fetch(`${API}/api/students/by-grade`)
