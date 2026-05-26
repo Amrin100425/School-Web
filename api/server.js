@@ -5,7 +5,7 @@ const app = express();
 
 app.use(cors());
 
-mongoose.connect("mongodb://localhost:27017/school_db");
+mongoose.connect(process.env.MONGO_URI);
 
 const studentSchema = new mongoose.Schema({
   name: String,
@@ -139,4 +139,4 @@ app.get("/api/students/grade6girl", async (req, res) => {
   res.json({ totalGG6 });
 });
 
-app.listen(3000, () => console.log("Server running on port 3000"));
+module.exports = app;
