@@ -4,14 +4,20 @@ fetch(`${API}/api/students/total`)
   .then((r) => r.json())
   .then((d) => (document.getElementById("total").textContent = d.total));
 
-fetch(`${API}/api/students/passed`)
+fetch(`${API}/api/students/gender`)
   .then((r) => r.json())
-  .then((d) => (document.getElementById("passed").textContent = d.total));
+  .then(
+    (d) => (document.getElementById("totalGirl").textContent = d.totalGirl),
+  );
 
-fetch(`${API}/api/students/failed`)
+fetch(`${API}/api/students/grade`)
   .then((r) => r.json())
-  .then((d) => (document.getElementById("failed").textContent = d.total));
-
+  .then((d) => (document.getElementById("grade1").textContent = d.totalG1));
+fetch(`${API}/api/students/grade1girl`)
+  .then((r) => r.json())
+  .then(
+    (d) => (document.getElementById("grade1girl").textContent = d.totalGG1),
+  );
 fetch(`${API}/api/students/by-grade`)
   .then((r) => r.json())
   .then((data) => {

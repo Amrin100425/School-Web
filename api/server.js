@@ -20,26 +20,26 @@ app.get("/api/students/total", async (req, res) => {
   const total = await Student.countDocuments();
   res.json({ total });
 });
+// Girl Student
+app.get("/api/students/gender", async (req, res) => {
+  const totalGirl = await Student.countDocuments({
+    gender: "ស",
+  });
 
-// Passed (score >= 50)
-app.get("/api/students/passed", async (req, res) => {
-  const total = await Student.countDocuments({ score: { $gte: 50 } });
-  res.json({ total });
+  res.json({ totalGirl });
 });
-
-// Failed (score < 50)
-app.get("/api/students/failed", async (req, res) => {
-  const total = await Student.countDocuments({ score: { $lt: 50 } });
-  res.json({ total });
+app.get("/api/students/grade", async (req, res) => {
+  const totalG1 = await Student.countDocuments({
+    grade: 1,
+  });
+  res.json({ totalG1 });
 });
+app.get("/api/students/grade1girl", async (req, res) => {
+  const totalGG1 = await Student.countDocuments({
+    grade: 1,
+    gender: "ស",
+  });
 
-// Per grade
-app.get("/api/students/by-grade", async (req, res) => {
-  const result = await Student.aggregate([
-    { $group: { _id: "$grade", total: { $sum: 1 } } },
-    { $sort: { _id: 1 } },
-  ]);
-  res.json(result);
+  res.json({ totalGG1 });
 });
-
 app.listen(3000, () => console.log("Server running on port 3000"));
