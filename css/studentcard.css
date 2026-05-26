@@ -4,6 +4,31 @@
   gap: 12px;
   margin-bottom: 24px;
 }
+/* Tablet screens (≤ 768px): 2 cards per row */
+@media (max-width: 768px) {
+  .cards-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Phone screens (≤ 480px): 1 card per row */
+@media (max-width: 480px) {
+  .cards-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .card-label {
+    font-size: 13px; /* shrink text */
+  }
+
+  .card-value {
+    font-size: 22px; /* shrink numbers */
+  }
+
+  .card-icon {
+    font-size: 16px; /* smaller icons */
+  }
+}
 
 .stat-card1 {
   background: #084d08;
