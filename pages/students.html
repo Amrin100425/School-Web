@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/studentcard.css" />
+    <script src="/components/SideBar.js" defer></script>
+    <script src="/components/TopBar.js" defer></script>
+    <script src="/components/Students.js" defer></script>
+    <title>Students</title>
+  </head>
+  <body>
+    <top-bar></top-bar>
+    <div class="layout">
+      <side-bar></side-bar>
+      <main class="main-content">
+        <div class="cards-wrap">
+          <div class="stat-card1">
+            <span class="card-label">សិស្សទាំងអស់</span>
+            <span class="card-value" id="total"></span>
+            <span class="card-sub sub-blue">នាក់</span>
+            <i class="fa-solid fa-users card-icon" style="color: #60a5fa"></i>
+          </div>
+          <div class="stat-card2">
+            <span class="card-label">សិស្សស្រី</span>
+            <span class="card-value" id="passed">—</span>
+            <span class="card-sub sub-green">ជាប់លទ្ធផល</span>
+            <i class="fa-solid fa-users card-icon" style="color: #4ade80"></i>
+          </div>
+          <div class="stat-card3">
+            <span class="card-label">សិស្សធ្លាក់</span>
+            <span class="card-value" id="failed">—</span>
+            <span class="card-sub sub-red">ធ្លាក់លទ្ធផល</span>
+            <i
+              class="fa-solid fa-circle-xmark card-icon"
+              style="color: #f87171"
+            ></i>
+          </div>
+          <div class="stat-card4">
+            <span class="card-label">ថ្នាក់សរុប</span>
+            <span class="card-value" id="grades">—</span>
+            <span class="card-sub sub-gray">ថ្នាក់រៀន</span>
+            <i
+              class="fa-solid fa-graduation-cap card-icon"
+              style="color: #fbbf24"
+            ></i>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

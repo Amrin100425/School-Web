@@ -1,0 +1,79 @@
+.cards-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.stat-card1 {
+  background: #084d08;
+  border: 0.5px solid #1e3a5f;
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.stat-card2{
+    background: #1e5049;
+  border: 0.5px solid #1e3a5f;
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;  
+}
+.stat-card3{
+    background: #501e48;
+  border: 0.5px solid #1e3a5f;
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;  
+}
+.stat-card4{
+    background: #496123;
+  border: 0.5px solid #1e3a5f;
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;  
+}
+.card-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.card-value {
+  font-size: 28px;
+  font-weight: 600;
+  color: #e8f0fe;
+  line-height: 1;
+}
+
+.card-sub { font-size: 12px; font-weight: 500; }
+.sub-green { color: #00ff22; }
+.sub-blue  { color: #0073ff; }
+.sub-red   { color: #ff0000; }
+.sub-gray  { color: #eeff00; }
+
+.card-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 18px;
+  opacity: 1.0;
+}

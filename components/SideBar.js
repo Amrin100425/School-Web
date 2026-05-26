@@ -7,14 +7,6 @@ class SideBar extends HTMLElement {
           <i class="fa-solid fa-home"></i>
           <span class="link-text">ទំព័រដើម</span>
         </a>
-        <a href="/pages/aboutus.html" class="sidebar-link" title="About">
-          <i class="fa-solid fa-info-circle"></i>
-          <span class="link-text">អំពីយើង</span>
-        </a>
-        <a href="/pages/contact.html" class="sidebar-link" title="Contact">
-          <i class="fa-solid fa-envelope"></i>
-          <span class="link-text">ទំនាក់ទំនង</span>
-        </a>
         <a href="/pages/students.html" class="sidebar-link" title="Students">
           <i class="fa-solid fa-users"></i>
           <span class="link-text">សិស្ស</span>

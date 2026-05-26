@@ -10,7 +10,7 @@ class TopBar extends HTMLElement {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link text-white" href="/pages/about.html">About</a>
+                <a class="nav-link text-white" href="/pages/aboutus.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="/pages/contact.html">Contact</a>
