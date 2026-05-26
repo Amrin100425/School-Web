@@ -77,6 +77,7 @@ side-bar {
 }
 
 .hero-img {
+  display: grid;
   flex: 0 0 420px;    /* fixed width, won't shrink */
   max-width: 420px;
   border-radius: 16px;
