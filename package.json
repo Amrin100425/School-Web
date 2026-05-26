@@ -1,6 +1,19 @@
 {
+  "name": "school-web",
+  "version": "1.0.0",
+  "main": "api/server.js",
+  "scripts": {
+    "start": "node api/server.js"
+  },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^7.2.0",
-    "bootstrap": "^5.3.8"
+    "express": "^5.2.1",
+    "mongoose": "^9.6.2",
+    "cors": "^2.8.6",
+    "mongodb": "^7.2.0",
+    "bootstrap": "^5.3.8",
+    "@fortawesome/fontawesome-free": "^7.2.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

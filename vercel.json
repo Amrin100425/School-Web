@@ -6,7 +6,7 @@
             "use": "@vercel/static"
         },
         {
-            "src": "components/**",
+            "src": "pages/**",
             "use": "@vercel/static"
         },
         {
@@ -18,18 +18,18 @@
             "use": "@vercel/static"
         },
         {
-            "src": "pages/**",
+            "src": "components/**",
             "use": "@vercel/static"
         },
         {
-            "src": "api/**",
+            "src": "api/server.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "/api/$1"
+            "dest": "api/server.js"
         },
         {
             "src": "/",
@@ -40,8 +40,16 @@
             "dest": "/pages/aboutus.html"
         },
         {
-            "src": "/(.*)",
-            "dest": "/$1.html"
+            "src": "/contact",
+            "dest": "/pages/contact.html"
+        },
+        {
+            "src": "/ranking",
+            "dest": "/pages/ranking.html"
+        },
+        {
+            "src": "/students",
+            "dest": "/pages/students.html"
         }
     ]
 }

@@ -138,5 +138,4 @@ app.get("/api/students/grade6girl", async (req, res) => {
 
   res.json({ totalGG6 });
 });
-
 module.exports = app;
