@@ -1,7 +1,7 @@
 class TopBar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <nav class="navbar navbar-expand-lg navbar-light" style="background: linear-gradient(135deg, #1a3b0a, #254d12, #448b21 );">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background: linear-gradient(135deg, #1a3b0a, #254d12, #223618 );">
         <div class="container-fluid px-4">
           <span class="navbar-brand fw-bold"><a href="/"><img src="/components/school.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></a></span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
