@@ -35,9 +35,15 @@ class TopBar extends HTMLElement {
               <a href="/pages/aboutus.html" style="display:block; padding:12px 18px; color:white; text-decoration:none; font-size:14px; transition: background 0.2s;"
                 onmouseover="this.style.background='rgba(255,255,255,0.1)'"
                 onmouseout="this.style.background='transparent'">អំពី</a>
+                <a href="/pages/students.html" style="display:block; padding:12px 18px; color:white; text-decoration:none; font-size:14px; border-top:1px solid rgba(255,255,255,0.08); transition: background 0.2s;"
+                onmouseover="this.style.background='rgba(255,255,255,0.1)'"
+                onmouseout="this.style.background='transparent'">សិស្សទាំងអស់</a>
               <a href="/pages/contact.html" style="display:block; padding:12px 18px; color:white; text-decoration:none; font-size:14px; border-top:1px solid rgba(255,255,255,0.08); transition: background 0.2s;"
                 onmouseover="this.style.background='rgba(255,255,255,0.1)'"
                 onmouseout="this.style.background='transparent'">ទំនាក់ទំនង</a>
+                 <a href="/pages/ranking.html" style="display:block; padding:12px 18px; color:white; text-decoration:none; font-size:14px; border-top:1px solid rgba(255,255,255,0.08); transition: background 0.2s;"
+                onmouseover="this.style.background='rgba(255,255,255,0.1)'"
+                onmouseout="this.style.background='transparent'">ចំណាត់ថ្នាក់</a>
             </div>
           </div>
 
