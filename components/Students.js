@@ -85,6 +85,17 @@ fetch(`${API}/api/students/grade1kgirl`)
     (d) => (document.getElementById("grade1kgirl").textContent = d.totalGG1K),
   );
 
+fetch(`${API}/api/students/grade2k`)
+  .then((r) => r.json())
+  .then(
+    (d) => (document.getElementById("grade2k").textContent = d.totalG2K),
+  );
+fetch(`${API}/api/students/grade2kgirl`)
+  .then((r) => r.json())
+  .then(
+    (d) => (document.getElementById("grade2kgirl").textContent = d.totalGG2K),
+  );
+
 fetch(`${API}/api/students/by-grade`)
   .then((r) => r.json())
   .then((data) => {

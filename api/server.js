@@ -5,6 +5,7 @@ const app = express();
 
 app.use(cors());
 
+
 mongoose.connect(process.env.MONGO_URI);
 
 const studentSchema = new mongoose.Schema({
@@ -152,5 +153,20 @@ app.get("/api/students/grade1kgirl", async (req, res) => {
     gender: "ស",
   });
   res.json({ totalGG1K });
+});
+app.get("/api/students/grade1x", async (req, res) => {
+  const totalG1X = await Student.countDocuments({
+    grade: 1,
+    class: "ខ",
+  });
+  res.json({ totalG1X });
+});
+app.get("/api/students/grade1xgirl", async (req, res) => {
+  const totalGG1X = await Student.countDocuments({
+    grade: 1,
+    class: "ខ",
+    gender: "ស",
+  });
+  res.json({ totalGG1X });
 });
 module.exports = app;
