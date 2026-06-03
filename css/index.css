@@ -11,6 +11,14 @@ body {
   height: 100vh;
   overflow: hidden;
   font-family: sans-serif;
+  letter-spacing: 0 !important;
+  word-spacing: 0 !important;
+}
+
+p, .content, .text {
+  letter-spacing: 0 !important;
+  word-spacing: 0 !important;
+  line-height: 1.8;
 }
 
 a {
