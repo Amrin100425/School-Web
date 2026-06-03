@@ -79,7 +79,7 @@ a{
 
 .hero-text p{
 
-  color:#b0c4d8;
+   color:#b0bccc;
 
   line-height:1.9;
 
@@ -112,6 +112,8 @@ a{
   box-shadow:
       0 8px 32px
       rgba(0,0,0,.35);
+  margin-right:auto;
+  margin-left:auto;
 }
 
 .hero-img img{
@@ -122,9 +124,9 @@ a{
 
   object-fit:cover;
 
-  display:block;
+  display:flex;
 }
-
+.hero-img:hover { transform: scale(1.07); }
 /* Button */
 
 .btn-hero{
@@ -148,7 +150,7 @@ a{
 
   color:white;
 }
-
+.btn-hero:hover { transform: scale(1.07); }
 /* ── Sidebar ── */
 
 .sidebar{
