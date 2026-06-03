@@ -11,7 +11,7 @@ class TopBar extends HTMLElement {
           <div class="ms-auto position-relative">
             <button id="menuBtn" style="
               background: none;
-              border: 1px solid rgba(255,255,255,0.4);
+              border: none;
               color: white;
               padding: 6px 14px;
               border-radius: 6px;

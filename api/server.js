@@ -138,4 +138,19 @@ app.get("/api/students/grade6girl", async (req, res) => {
 
   res.json({ totalGG6 });
 });
+app.get("/api/students/grade1k", async (req, res) => {
+  const totalG1K = await Student.countDocuments({
+    grade: 1,
+    class: "ក",
+  });
+  res.json({ totalG1K });
+});
+app.get("/api/students/grade1kgirl", async (req, res) => {
+  const totalGG1K = await Student.countDocuments({
+    grade: 1,
+    class: "ក",
+    gender: "ស",
+  });
+  res.json({ totalGG1K });
+});
 module.exports = app;

@@ -18,7 +18,7 @@ class Ranking extends HTMLElement {
         "
           onmouseover="this.style.background='rgba(255,255,255,0.1)'"
           onmouseout="this.style.background='transparent'">
-          ☰ <span style="font-size:11px; margin-left:6px;"></span>
+          <h3>☰</h3> <span style="font-size:11px; margin-left:6px;"></span>
         </button>
 
         <div id="subMenu" style="
@@ -34,7 +34,7 @@ class Ranking extends HTMLElement {
           z-index: 10000;
           overflow: hidden;
         ">
-          <a href="/pages/ranking.html?class=1" style="display:block; padding:10px 16px; color:white; text-decoration:none; font-size:13px; transition: background 0.2s;"
+          <a href="/pages/subpages/class1.html?class=1" style="display:block; padding:10px 16px; color:white; text-decoration:none; font-size:13px; transition: background 0.2s;"
             onmouseover="this.style.background='rgba(255,255,255,0.1)'"
             onmouseout="this.style.background='transparent'">ថ្នាក់ទី ១</a>
           <a href="/pages/ranking.html?class=2" style="display:block; padding:10px 16px; color:white; text-decoration:none; font-size:13px; border-top:1px solid rgba(255,255,255,0.08); transition: background 0.2s;"
