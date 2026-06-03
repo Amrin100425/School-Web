@@ -75,9 +75,7 @@ fetch(`${API}/api/students/grade6girl`)
   );
 fetch(`${API}/api/students/grade1k`)
   .then((r) => r.json())
-  .then(
-    (d) => (document.getElementById("grade1k").textContent = d.totalG1K),
-  );
+  .then((d) => (document.getElementById("grade1k").textContent = d.totalG1K));
 
 fetch(`${API}/api/students/grade1kgirl`)
   .then((r) => r.json())
@@ -85,15 +83,13 @@ fetch(`${API}/api/students/grade1kgirl`)
     (d) => (document.getElementById("grade1kgirl").textContent = d.totalGG1K),
   );
 
-fetch(`${API}/api/students/grade2k`)
+fetch(`${API}/api/students/grade1x`)
+  .then((r) => r.json())
+  .then((d) => (document.getElementById("grade1x").textContent = d.totalG1X));
+fetch(`${API}/api/students/grade1xgirl`)
   .then((r) => r.json())
   .then(
-    (d) => (document.getElementById("grade2k").textContent = d.totalG2K),
-  );
-fetch(`${API}/api/students/grade2kgirl`)
-  .then((r) => r.json())
-  .then(
-    (d) => (document.getElementById("grade2kgirl").textContent = d.totalGG2K),
+    (d) => (document.getElementById("grade1xgirl").textContent = d.totalGG1X),
   );
 
 fetch(`${API}/api/students/by-grade`)
