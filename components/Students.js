@@ -92,6 +92,26 @@ fetch(`${API}/api/students/grade1xgirl`)
     (d) => (document.getElementById("grade1xgirl").textContent = d.totalGG1X),
   );
 
+fetch(`${API}/api/students/grade1kk`)
+  .then((r) => r.json())
+  .then((d) => (document.getElementById("grade1kk").textContent = d.totalG1KK));
+
+fetch(`${API}/api/students/grade1kkgirl`)
+  .then((r) => r.json())
+  .then(
+    (d) => (document.getElementById("grade1kkgirl").textContent = d.totalGG1KK),
+  );
+
+fetch(`${API}/api/students/grade1xx`)
+  .then((r) => r.json())
+  .then((d) => (document.getElementById("grade1xx").textContent = d.totalG1XX));
+
+fetch(`${API}/api/students/grade1xxgirl`)
+  .then((r) => r.json())
+  .then(
+    (d) => (document.getElementById("grade1xxgirl").textContent = d.totalGG1XX),
+  );
+
 fetch(`${API}/api/students/by-grade`)
   .then((r) => r.json())
   .then((data) => {
